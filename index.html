@@ -1,0 +1,210 @@
+<script src="//ucounter.ucoz.net/?src=ss2&data=Mjo5OjM4OjEwOTo1MzoyMjoyOTo5Mjo4NjoyNjo4ODo2MDoxNTowOjA6MTA6MTExOjIwOjUwOjI4OjMxOjIzOjQ3OjE2OjkzOjExNzo5ODo4OTo4Mzo3ODo0OTo2NDozMDoxMzozMDo5Mjo4NjoxMDo4MDo2MDoxNToyNjoyMTo5OjM4OjE1OjM5OjExOjg6NDo4NjoxMDo4MDo2MDoxNToxMzoxNDo1OjExMTo5MjozMjoxMToyOjU6ODY6MjQ6ODU6Mzk6NTU6NTQ6MjE6Mjc6MTExOjIwOjUwOjE2OjI1OjYyOjE3OjI5Ojg1OjYwOjEwOTo3OToxODoxOjM4OjEwOTozNToyNDozOjY6Nzc6OTU6NzQ6MzM6MzY6NTQ6MjM6MDo1OTo4NjoxMjQ6OTU6MzA6ODo0OjM4OjkzOjQyOjM2OjE1OjkyOjc4OjMzOjkxOjUzOjM4OjE6MTU6MjM6Njg6MzE6NTk6NTc6Mjk6NjI6MTA6MzQ6OTM6NTA6Njg=&r64=&cid=A1B100&cb=0.384092559166245" async></script><script>new Image().src = "//counter.yadro.ru/hit;ucoz_sscounter_1?r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random();</script><script type="text/javascript">(function (d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter39883200 = new Ya.Metrika({id:39883200,clickmap:true,trackLinks:true,accurateTrackBounce:true,ut:"noindex"});} catch(e) { }});var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function () { n.parentNode.insertBefore(s, n); };s.type = "text/javascript";s.async = true;s.src = "https://mc.yandex.ru/metrika/watch.js";if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); }})(document, window, "yandex_metrika_callbacks");</script>
+            <script type="text/javascript">var _tmr = window._tmr || (window._tmr = []);_tmr.push({id: "2818815", type: "pageView", start: (new Date()).getTime()});(function (d, w, id) {if (d.getElementById(id)) return;var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }})(document, window, "topmailru-code");</script><script src="//s202.ucoz.net/cgi/uutils.fcg?a=get_preroll_cookie&r=0.611498755214164"></script>
+<script type="text/javascript" src="/abnl/?adsdata=4vYgGZu4yTSve;6JrnzXbTgGuKdju651JI6QJsPOd;n!COBWZ6T0p1xVFBUcNhOQS9D!hUqASFdIX;VjZxFyrG1wln1a1MtRB66SXmidwgs3f6x68hZJR;xaAehWOOKL13fFV2gtM5U5N63F;V4rOrCqdXveJcpCp5UkiUvM2TaSmhHKxPp5G!HmMOKhXB0gOwFyeA2JBKSMytpf7WlmGRNqRmbqgu!3JGMQZFEw7^UD64QrrA9g;HBAJl;vbKSa659T1NdEAictKqdQ^YJN!GBje5Thfzh^VOvMqeJB5sXD4CCRjzeE8I^RKOFRDf8LklgStLQPZKRc^Iz^tuVGxEytUtKPp2iLdMvau0POvKKXLU4OZihpkwoo"></script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	<link rel="stylesheet" href="skier.css" type="text/css" media="screen" title="no title">
+	<meta http-equiv="Content-Language" content="ru">
+
+
+	<script type="text/javascript" src = "raphael.min.js"></script>
+	<title>Модель лыжника</title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				x-counrty skier computer model
+			</h1>
+				<!--<img src="phases_v1.gif"> -->
+
+		</div>
+		<div id="content">
+		<div id = "canvas"></div>
+		</div>
+		<div id="footer">
+		&copy 2011. Dmitry Khrykin, MSU
+		</div>
+		<script>
+		// Creates canvas 320 × 200 at 10, 50
+		var content = document.getElementById("content");
+		var canvas = document.getElementById("canvas");
+		var paper = Raphael(canvas, "100%", "100%");
+
+		var l = 90;
+		var leftBorder = 50;
+		var baseline = 350;
+		var r = 0.2*l;
+		var lFoot = 0.42*l;
+		var lLeg = 0.87*l;
+		var lHip = 0.97*l;
+		var lLoin = 0.33*l;
+		var lBody = l;
+		var lArm = 0.67*l;
+		var lFore = 0.73*l;
+		var lNeck = 0.5*l;
+		var lPole = (lBody + lLeg + lHip + lNeck + r)*0.72;
+		var skiLenght = (lBody + lLeg + lHip + lNeck + r)*1.1;
+		var skiCOG = skiLenght * 4/9;
+		var strokeWidth = 0.15*l;
+		var N = 11;
+		var x = new Array(N);
+		var y = new Array(N);
+		var f = new Array(N-1);
+		var skiPath;
+		var footPath;
+		var legPath;
+		var hipPath;
+		var loinPath;
+		var bodyPath;
+		var armPath;
+		var forePath;
+		var polePath;
+
+		for( i = 0; i<= N-1; i++) { //
+			f[i] = 0.785;//
+		}//
+		f[4] = 1.2; //
+		f[8] = 0.5; //
+
+
+		function refreshCoords() {
+			x[1] = leftBorder+skiCOG;
+			y[1] = baseline;
+
+			x[2] = x[1] - lFoot*Math.cos(f[1]);
+			y[2] = y[1] - lFoot*Math.sin(f[1]);
+
+			x[3] = x[2] + lLeg*Math.cos(f[2]);
+			y[3] = y[2] - lLeg*Math.sin(f[2]);
+
+			x[4] = x[3] - lHip*Math.cos(f[3]);
+			y[4] = y[3] - lHip*Math.sin(f[3]);
+
+			x[5] = x[4] + lLoin*Math.cos(f[4]);
+			y[5] = y[4] - lLoin*Math.sin(f[4]);
+
+			x[6] = x[5] + lBody*Math.cos(f[5]);
+			y[6] = y[5] - lBody*Math.sin(f[5]);
+
+			x[7] = x[6] + lArm*Math.cos(f[6]);
+			y[7] = y[6] + lArm*Math.sin(f[6]);
+
+			x[8] = x[7] + lFore*Math.cos(f[7]);
+			y[8] = y[7] - lFore*Math.sin(f[7]);
+
+			x[9] = x[6] + lNeck*Math.cos(f[5]);
+			y[9] = y[6] - lNeck*Math.sin(f[5]);
+
+			x[10] = x[8] - lPole*Math.sin(f[8]);
+			y[10] = y[8] + lPole*Math.cos(f[8]);
+
+			skiPath =   "M" + leftBorder+" "+baseline+
+						"L" + (leftBorder+skiLenght)+" "+baseline+
+						"Q" + (leftBorder+skiLenght+ 0.42*l) + " "
+							+ (baseline) + " "
+							+ (leftBorder+skiLenght+0.42*l) + " "
+	 						+ (baseline-0.13*l);
+			footPath =  "M" + x[1] +" "+ y[1]+
+						"L" + x[2] +" "+ y[2];
+			legPath =   "M" + x[2] +" "+ y[2]+
+						"L" + x[3] +" "+ y[3];
+			hipPath =   "M" + x[3] +" "+ y[3]+
+						"L" + x[4] +" "+ y[4];
+			loinPath =  "M" + x[4] +" "+ y[4]+
+						"L" + x[5] +" "+ y[5];
+			bodyPath =  "M" + x[5] +" "+ y[5]+
+						"L" + x[6] +" "+ y[6];
+			armPath =   "M" + x[6] +" "+ y[6]+
+						"L" + x[7] +" "+ y[7];
+			forePath =  "M" + x[7] +" "+ y[7]+
+						"L" + x[8] +" "+ y[8];
+			polePath =  "M" + x[8] +" "+ y[8]+
+						"L" + x[10]+" "+ y[10];
+				}
+		refreshCoords();
+		var ski  = paper.path(skiPath);
+		var head = paper.circle(x[9],y[9],r);
+		var pole = paper.path(polePath);
+
+		var skier = paper.set();
+
+		var foot = paper.path(footPath);
+		var leg = paper.path(legPath);
+		var hip = paper.path(hipPath);
+		var loin = paper.path(loinPath);
+		var body = paper.path(bodyPath);
+		var arm = paper.path(armPath);
+		var fore = paper.path(forePath);
+
+		skier.push(
+			foot,
+			leg,
+			hip,
+			loin,
+			body,
+			arm,
+			fore
+		);
+		function refresh () {
+				refreshCoords();
+				foot.attr("path",footPath);
+				leg.attr("path",legPath);
+				hip.attr("path",hipPath);
+				loin.attr("path",loinPath);
+				body.attr("path",bodyPath);
+				arm.attr("path",armPath);
+				fore.attr("path",forePath);
+				head.attr({cx: x[9], cy: y[9]});
+				pole.attr("path",polePath);
+		}
+		skier.attr("stroke-width", strokeWidth);
+		skier.attr("stroke","#f00");
+		skier.attr("stroke-linecap", "round");
+
+		ski.attr("stroke-width", "3");
+		ski.attr("stroke","rgb(165,200,35)");
+		ski.attr("stroke-linecap", "round");
+
+
+		head.attr("fill", "#f00");
+		head.attr("stroke-width", "0");
+		foot.attr("stroke","rgb(50,50,50)");
+		pi = Math.PI;
+		f[6] = pi/4;
+		f[7] = pi/4;
+		f[1] = 0;
+		var t=0;
+		var A = 1;
+		var stop = false;
+		content.onclick = function () {
+			if(stop == true) {
+				stop = false;
+				}
+			else {
+				stop = true;
+			}
+
+		}
+		motion();
+		function motion() {
+		if(!stop) {
+			t+=0.15;
+			content.style.cssText="background-position: "+(-150*(t + 0.2*Math.sin(2*t)))+"px 0;";
+			f[1] = 0.8*A*Math.sin(Math.pow((Math.sin(t-0.5)),8));
+			f[2] = pi/3;
+			f[3] = pi/3+0.5*A*Math.pow((Math.sin(t)),2);
+			f[4] = pi/4+0.5*A*Math.pow((Math.sin(t)),2);
+			f[5] = pi/6+0.6*A*Math.pow((Math.sin(t)),2);
+			f[6] = 3*pi/6+0.8*A*(Math.sin(2*t));
+			f[7] = -pi/6-1.7*A*Math.sin(2*t);
+			f[8] = A*(Math.sin(2*t)+1);
+ 			refresh();
+ 		}
+			setTimeout(motion,50);
+		}
+		</script>
+
+<!-- copyright (i1) --><div align="center"><a href="http://www.ucoz.ru/" title="Создать сайт бесплатно"><img style="margin:0;padding:0;border:0;" alt="Hosted by uCoz" src="http://s202.ucoz.net/img/cp/5.gif" width="80" height="15" title="Hosted by uCoz" /></a><br /></div><!-- /copyright -->
+</body>
+</html>
