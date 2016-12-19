@@ -187,24 +187,23 @@
 
 		}
 		motion();
+    var w = 0.2;
 		function motion() {
 		if(!stop) {
 			t+=0.15;
 			content.style.cssText="background-position: "+(-150*(t + 0.2*Math.sin(2*t)))+"px 0;";
-			f[1] = 0.8*A*Math.sin(Math.pow((Math.sin(t-0.5)),8));
+			f[1] = 0.8*A*Math.sin(Math.pow((Math.sin(w*t-0.6)),8));
 			f[2] = pi/3;
-			f[3] = pi/3+0.5*A*Math.pow((Math.sin(t)),2);
-			f[4] = pi/4+0.5*A*Math.pow((Math.sin(t)),2);
-			f[5] = pi/6+0.6*A*Math.pow((Math.sin(t)),2);
-			f[6] = 3*pi/6+0.8*A*(Math.sin(2*t));
-			f[7] = -pi/6-1.7*A*Math.sin(2*t);
-			f[8] = A*(Math.sin(2*t)+1);
+			f[3] = pi/3+0.5*A*Math.pow((Math.sin(w*t)),2);
+			f[4] = pi/4+0.5*A*Math.pow((Math.sin(w*t)),2);
+			f[5] = pi/6+0.6*A*Math.pow((Math.sin(w*t)),2);
+			f[6] = 3*pi/6+0.8*A*(Math.sin(2*w*t));
+			f[7] = -pi/6-1.7*A*Math.sin(2*w*t);
+			f[8] = A*(Math.sin(2*w*t)+1); // Палки
  			refresh();
  		}
 			setTimeout(motion,50);
 		}
 		</script>
-
-<!-- copyright (i1) --><div align="center"><a href="http://www.ucoz.ru/" title="Создать сайт бесплатно"><img style="margin:0;padding:0;border:0;" alt="Hosted by uCoz" src="http://s202.ucoz.net/img/cp/5.gif" width="80" height="15" title="Hosted by uCoz" /></a><br /></div><!-- /copyright -->
 </body>
 </html>
